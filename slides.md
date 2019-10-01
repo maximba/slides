@@ -7,7 +7,7 @@
 --
 
 ## Main Goal
-_"Facilitati<img class="plain" src="images/kaizen1.png" width=100%></img>
+_"Facilitating informed decision-making at both technical and methodology level"_
 <img class="plain" src="images/kaizen2.png" width=100%></img>
 Note:
 Explain here the motivation for the rather involved prospection process:
