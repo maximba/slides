@@ -1,31 +1,28 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-# First 100 Days Report
+## First 100 Days Report
 ### October 2019
-<img class="plain" src="images/kaizen1.png" width=100%></img>
+<!-- .slide: data-background="/images/kaizen1.png" -->
 
---
+---
 
 ## Main Goal
 _"Facilitating informed decision-making at both technical and methodology level"_
-<img class="plain" src="images/kaizen2.png" width=100%></img>
-Note:
-Explain here the motivation for the rather involved prospection process:
+<img class="plain" src="/images/kaizen2.png"></img>
+
+Note: Explain here the motivation for the rather involved prospection process:
 * Some PoCs will have to inform our decision later which provider and tech for next generation product
 * Employees surveys to gather the efects of the Agile and DevOps adoption
+
 ---
 
 ## The Cutting-Plane
 _"The cutting-plane method is any of a variety of optimization methods that iteratively refine an objective" - proposed by Ralph Gomory in the 1950_
-Set constraints & KPIs
-2. Eliminate
-3. Validate
 
-Note:
-* Eliminate step: get rid of all the choices that don't meet our constraints or are bad in terms of KPIs
-* Validate: Make sure the remaining options are completely valid
+<img src="/images/agile_devops.png"></img>
 
---
+
+---
 
 ## Initial list of Cloud Providers
 
