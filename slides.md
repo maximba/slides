@@ -2,18 +2,18 @@
 
 # First 100 Days Report
 ### October 2019
+<img class="plain" src="images/kaizen1.png" width=100%></img>
 
 --
 
-## Sprint Goal
+## Main Goal
 
-_"Make an informed decision for the PoC design"_
+_"Facilitating informed decision-making at both technical and methodology level"_
 
 Note:
-Explain here the motivation for the rather involved selection process:
-* These PoCs will have to inform our decision later which provider and tech we use for production
-* So we need to make sure we have the really interesting candidates here
-
+Explain here the motivation for the rather involved prospection process:
+* Some PoCs will have to inform our decision later which provider and tech for next generation product
+* Employees surveys to gather the efects of the Agile and DevOps adoption
 ---
 
 ## Overview: Selection Process
