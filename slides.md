@@ -15,14 +15,9 @@ Explain here the motivation for the rather involved prospection process:
 * Employees surveys to gather the efects of the Agile and DevOps adoption
 ---
 
-## Overview: Selection Process
-
-<!-- IMO (NG) it does not make sense to start listing stories here.
-     Instead, describe our selection process and then go into detail
-     for some of the steps.
--->
-
-1. Set constraints & KPIs
+## The Cutting-Plane
+_"The cutting-plane method is any of a variety of optimization methods that iteratively refine an objective" - proposed by Ralph Gomory in the 1950_
+Set constraints & KPIs
 2. Eliminate
 3. Validate
 
