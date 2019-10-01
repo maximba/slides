@@ -7,9 +7,8 @@
 --
 
 ## Main Goal
-
-_"Facilitating informed decision-making at both technical and methodology level"_
-
+_"Facilitati<img class="plain" src="images/kaizen1.png" width=100%></img>
+<img class="plain" src="images/kaizen2.png" width=100%></img>
 Note:
 Explain here the motivation for the rather involved prospection process:
 * Some PoCs will have to inform our decision later which provider and tech for next generation product
