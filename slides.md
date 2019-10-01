@@ -6,8 +6,9 @@
 
 ---
 
-## Main Goal
-_"Facilitating informed decision-making at both technical and methodology level"_
+## Main Goals
+* Respond to the rapidly changing competitive landscape
+* Provide stable, reliable, and secure service to the customer
 <img class="plain" src="/images/kaizen2.png"></img>
 
 Note: Explain here the motivation for the rather involved prospection process:
@@ -16,92 +17,29 @@ Note: Explain here the motivation for the rather involved prospection process:
 
 ---
 
+## Theory of Constraints and Core
+<table>
+<tr><td></td><td>&#x2199;</td><td>Respond to urgent business needs</td><td>&#x2190;</td><td>Complet work/</td></tr>
+<tr><td colspan=4></td><td>Changes quickly</td></tr>
+<tr><td>Ensure that IT contributes</td></tr>
+<tr><td>to the business goals</td></tr>
+<tr><td></td><td>&#x2196;</td><td>Provide an stable and predictable</td><td>&#x2190;</td><td>Complet work/</td></tr>
+<tr><td colspan=2></td><td>IT production environment</td><td></td><td>Changes carefully</td></tr>
+</table>
+
+----
+
 ## The Cutting-Plane
 _"The cutting-plane method is any of a variety of optimization methods that iteratively refine an objective" - proposed by Ralph Gomory in the 1950_
 
 <img src="/images/agile_devops.png"></img>
 
-
----
-
-## Initial list of Cloud Providers
-
-<img class="plain" src="images/aws.png" width=23%></img>
-<img class="plain" src="images/azure.png" width=23%></img>
-<img class="plain" src="images/google.png" width=23%></img>
-<img class="plain" src="images/oracle.png" width=23%></img>
-<img class="plain" src="images/ibm.png" width=23%></img>
-<img class="plain" src="images/sap.png" width=23%></img>
-<img class="plain" src="images/noris.png" width=23%></img>
-
-Note:
-The "big" cloud providers plus Noris' cloud offering
-
-Why consider Noris at all? There's the possibility to keep certain parts of our 
-infrastructure that doesn't need to scale as much, which reduces the migration effort,
-enables a 'soft' migration
-
---
-
-
-## Constraints & KPIs
-
-Main differentiators:
-* Availability of Oracle DB with operational support
-* Hybris Support
-* Ability to scale
-
-Note:
-* Oracle DB was set for this project's scope
-* New provider choice shouldn't lower our DB service level too much
-* We need confidence in our future ability to scale up/down quickly
-
---
-
-## Providers after Elimination
-
-<img class="plain" src="images/aws.png" width=40%></img>
-<img class="plain" src="images/oracle.png" width=40%></img>
-
-Note:
-* Azure, Google, IBM, SAP don't offer managed Oracle DB (or not at all)
-* Noris Cloud still involves manual interaction in key places (most notably scaling for everything except OpenStack)
-* This also creates high setup costs in those places
-
---
-
-## Validation
-
-<!-- there are of course lots more differences here, writing down only the
-     most important ones here 
--->
-
-AWS:
-* <!-- .element: class="plusitem" --> Largest product lineup
-* <!-- .element: class="plusitem" --> Easy to find expertise
-* <!-- .element: class="minusitem" --> Oracle DB features not 100% supported
-
-Oracle Cloud:
-* <!-- .element: class="plusitem" --> Unexpensive
-* <!-- .element: class="plusitem" --> Lots of support from provider during setup phase
-* <!-- .element: class="minusitem" --> Likely vendor lock-in
-
-Note:
-* Both AWS and Oracle Cloud valid as far as we can tell right now
-* Key differences were found already, though
-* Final decision will have to factor in long-term choice of DB tech
-
----
-
-## Forecast
-
-* First prototypes of cloud-based webshop!
-* <i class="fas fa-cloud aws-cloud"></i> <i class="fas fa-cloud oracle-cloud"></i>
-
 ---
 
 ## Thank you!
 ### Feedback? Questions?
+
+<i class="fas fa-cloud aws-cloud"></i> 
 
 
 _"I particularly found valuable..."_

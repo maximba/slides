@@ -4,6 +4,7 @@ services:
     build: .
     volumes:
       - ./slides.md:/app/slides.md
+      - ./custom.css:/app/custom.css
       - ./images:/app/images
     ports:
       - "1948:1948"
