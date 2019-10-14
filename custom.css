@@ -15,13 +15,10 @@
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  font-weight: 80%; 
+  font-weight: 70%; 
 }
 
 table, td, th, tr {
     border: 0px solid grey;
+    border-bottom: 0px solid; }
 }
-
-.reveal table th,
-.reveal table td {
-  border-bottom: 0px solid; }
