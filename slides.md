@@ -6,7 +6,7 @@
 
 ---
 
-## Main Goals
+### Why adopting Agile Culture and DevOps Practices ?
 * Respond to the rapidly changing competitive landscape
 * Provide stable, reliable, and secure service to the customer
 <img class="plain" src="/images/kaizen2.png"></img>
@@ -17,7 +17,7 @@ Note: Explain here the motivation for the rather involved prospection process:
 
 ---
 
-## Theory of Constraints and Core
+## Problem Reference: Theory of Constraints and Core
 <table>
 <tr><td></td><td>&#x2199;</td><td>Respond to urgent business needs</td><td>&#x2190;</td><td>Complet work/</td></tr>
 <tr><td colspan=4></td><td>Changes quickly</td></tr>
@@ -28,12 +28,57 @@ Note: Explain here the motivation for the rather involved prospection process:
 </table>
 
 ----
+## Then Chronic Conflict in manufacturing 80's
 
+* Protect Sales &#x2192; Increase Inventory 
+* Reduce Costs  &#x2192; Decrease Inventory
+
+_The Solutions was adopting Lean principles, reducing batch sizes,
+reducing WiP, shortening and ampliyfing feedback loops_
+
+---
+## Problem Evidence: Low Performance
+
+<img src="/images/gartner.png"></img>
+ * In 2018 ICT spending (<span>$</span>3.8 trillions)(4% global GDP).If
+ we assume 1/10 was spent on urgent and unplanned work, <span>$</span>380
+ billions were wasted.
+
+----
+## The Downward Spiral 
+* Acts
+ * Technical debt and daily workarounds
+ * Compensate for the latest broken promise
+ * Our work becomes more tigthly coupled, smaller actions cause bigger
+failures
+* Costs: Human
+ * People become unwilling
+ * Decrease quality of life and we lose our best people
+
+---
 ## The Cutting-Plane
-_"The cutting-plane method is any of a variety of optimization methods that iteratively refine an objective" - proposed by Ralph Gomory in the 1950_
+* The principles behind DevOps work patterns allow us optimize the IT value stream, converting business needs
+  into 
 
 <img src="/images/agile_devops.png"></img>
 
+_"The cutting-plane method is any of a variety of optimization methods that iteratively refine an
+objective."_
+
+----
+## Agile Culture
+* Scrum Methodoly Training
+* Cutting-Plane Adoption: methodology and artifacts tuning
+* Team of Teams
+* Product Owner Community of Practice 
+* Scrum of Scrum 
+
+----
+## DevOps Practices
+* Technology Agnostic: _don't put all eggs in one basket_
+* Breaking the Monolith: microservices on containers
+* Continuous Integration and Deployment to avoid Downward Spira
+ 
 ---
 
 ## Thank you!
@@ -48,3 +93,5 @@ _"I'd like to hear more about..."_
 
 _"I suggest to also consider..."_
 
+_References from "The DevOps Handbook", by Gene Kin, Jez Hamble, Patrick
+Debois and John Willis_
