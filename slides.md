@@ -5,8 +5,7 @@
 <!-- .slide: data-background="/images/kaizen1.png" -->
 
 ---
-
-### Why adopting Agile Culture and DevOps Practices ?
+### Why?
 * Respond to the rapidly changing competitive landscape
 * Provide stable, reliable, and secure service to the customer
 <img class="plain" src="/images/kaizen2.png"></img>
@@ -16,15 +15,14 @@ Note: Explain here the motivation for the rather involved prospection process:
 * Employees surveys to gather the efects of the Agile and DevOps adoption
 
 ---
-
 ## Problem Reference: Theory of Constraints and Core
 <table>
-<tr><td></td><td>&#x2199;</td><td>Respond to urgent business needs</td><td>&#x2190;</td><td>Complet work/</td></tr>
-<tr><td colspan=4></td><td>Changes quickly</td></tr>
-<tr><td>Ensure that IT contributes</td></tr>
-<tr><td>to the business goals</td></tr>
-<tr><td></td><td>&#x2196;</td><td>Provide an stable and predictable</td><td>&#x2190;</td><td>Complet work/</td></tr>
-<tr><td colspan=2></td><td>IT production environment</td><td></td><td>Changes carefully</td></tr>
+<tr><td>Complet work/</td></tr>
+<tr><td>Changes quickly</td><td>&#x27a1;</td><td>Respond to urgent business needs</td><td>&#x2b0a;</td></tr>
+<tr><td colspan=4></td><td>Ensure that IT contributes</td></tr>
+<tr><td colspan=4></td><td>to the business goals</td></tr>
+<tr><td>Complet work/</td><td>&#x27a1;</td><td>Provide an stable and predictable</td><td>&#x2b08;</td></tr>
+<tr><td>Changes carefully</td><td></td><td>IT production environment</td></tr>
 </table>
 
 ----
@@ -55,43 +53,43 @@ failures
  * People become unwilling
  * Decrease quality of life and we lose our best people
 
+_References from "The DevOps Handbook", by Gene Kin, Jez Hamble, Patrick
+Debois and John Willis_
+
 ---
-## The Cutting-Plane
-* The principles behind DevOps work patterns allow us optimize the IT value stream, converting business needs
-  into 
-
+## Agile and DevOps
 <img src="/images/agile_devops.png"></img>
-
-_"The cutting-plane method is any of a variety of optimization methods that iteratively refine an
-objective."_
 
 ----
 ## Agile Culture
 * Scrum Methodoly Training
-* Cutting-Plane Adoption: methodology and artifacts tuning
-* Team of Teams
-* Product Owner Community of Practice 
-* Scrum of Scrum 
+* Team Empowerment
+* Cross Communication: Team of Teams, Community of Practices, SoS
 
 ----
 ## DevOps Practices
+* Continuous Integration and Deployment to avoid Downward Spiral
 * Technology Agnostic: _don't put all eggs in one basket_
 * Breaking the Monolith: microservices on containers
-* Continuous Integration and Deployment to avoid Downward Spira
- 
----
 
+---
+## Diagnostic: Actions
+
+Agile                               | DevOps
+----------------------------------- | --------------------------------------
+&#x274c; Identifying Product Owners | &#x2705; CI/CD Environment Definition  
+&#x26a0; Scrum Masters Recruitment  | &#x26A0; Git Branch flow model Adoption
+&#x2705; Board Tools Implementation | &#x274c; Test-Driven-Development
+&#x2705; Continuous Improvement     | &#x274c; Metrics and Monitoring
+
+---
 ## Thank you!
 ### Feedback? Questions?
 
-<i class="fas fa-cloud aws-cloud"></i> 
-
+<i class="fas fa-cloud"></i> 
 
 _"I particularly found valuable..."_
 
 _"I'd like to hear more about..."_
 
 _"I suggest to also consider..."_
-
-_References from "The DevOps Handbook", by Gene Kin, Jez Hamble, Patrick
-Debois and John Willis_
