@@ -1,10 +1,12 @@
-FROM node:latest
-
+FROM node:lts-alpine
 WORKDIR /app
 
-COPY . .
-RUN npm install
+COPY . /app
+
+RUN npm install --production
 
 EXPOSE 1948
-CMD [ "node", "bin/reveal-md.js", "slides.md", "--css", "custom.css"]
 
+ENTRYPOINT [ "node", "bin/reveal-md.js" ]
+CMD [ "/app/slides.md", "--css", "custom.css"]
+#CMD [ "node", "bin/reveal-md.js", "slides.md", "--css", "custom.css", "--theme", "theme/black.css"]
