@@ -3,18 +3,64 @@
 ## Axesor becoming a SRE organization
 ### November 2019
 <!-- .slide: data-background="/images/kaizen1.png" -->
+マクシモ
 
 ---
-### Why?
-* Respond to the rapidly changing competitive landscape
-* Provide stable, reliable, and secure service to the customer
-<img class="plain" src="/images/kaizen2.png"></img>
 
-Note: Explain here the motivation for the rather involved prospection process:
-* Some PoCs will have to inform our decision later which provider and tech for next generation product
-* Employees surveys to gather the efects of the Agile and DevOps adoption
+## TL;DR
+<img class="plain" src="/images/TL;DR.png">SRE is what happens when you ask a software engineer to design an operations function.</img>
 
 ---
+
+## Principles: Automation
+>“Whenever there is a hard job to be done I assign it to a lazy man; he is sure to find an easy way of doing it.” Walter Chrysler
+
+* If an existing process cannot automated, it will be replaced
+* If a proposed process cannot be automates, it will be rejected
+
+Source: Alex Meng ( <i class="fab fa-medium-m">@alexbmeng</i> )
+
+---
+
+## Principles: Ephemerality
+* Servers are ephemeral.
+* Application servers are stateless
+* Configuration management is used to create images.
+
+_Source: Alex Meng ( <i class="fab fa-medium-m">@alexbmeng</i> )_
+
+---
+
+## Principles: CI/CD
+<img class="plain" src="/images/cicd.png"></img>
+<img class="plain" src="/images/cicd1.png"></img>
+
+---
+
+## Principles: CI/CD &#x2192; Build
+<img class="plain" src="/images/cicd.png"></img>
+<img class="plain" src="/images/cicd2.png"></img>
+
+---
+
+## Principles: CI/CD &#x2192; Test
+<img class="plain" src="/images/cicd.png"></img>
+<img class="plain" src="/images/cicd3.png"></img>
+
+---
+
+## Principles: CI/CD &#x2192; Build Deployer
+<img class="plain" src="/images/cicd.png"></img>
+<img class="plain" src="/images/cicd4.png"></img>
+
+---
+
+## Principles: CI/CD &#x2192; Deploy
+<img class="plain" src="/images/cicd.png"></img>
+<img class="plain" src="/images/cicd5.png"></img>
+
+---
+
 ## Problem Reference: Theory of Constraints and Core
 <table>
 <tr><td>Complet work/</td></tr>
