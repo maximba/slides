@@ -1,5 +1,4 @@
-#FROM node:lts-alpine
-FROM node:lts-slim
+FROM node:lts-alpine
 WORKDIR /app
 
 COPY . /app

@@ -2,7 +2,7 @@ version: '3'
 services:
   reveal-md:
     build: .
-    image: axesor/slides_sre:latest
+    image: axesor/slides:latest
     volumes:
       - ./slides.md:/app/slides.md
       - ./custom.css:/app/custom.css
