@@ -6,6 +6,7 @@ services:
       - ./slides.md:/app/slides.md
       - ./custom.css:/app/custom.css
       - ./images:/app/images
+      - ./theme/black.css:/app/theme/black.css
     ports:
       - "1948:1948"
     
