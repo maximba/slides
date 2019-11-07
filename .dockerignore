@@ -8,9 +8,7 @@ npm-debug.log
 .github
 .release-it.json
 *.md
-*~
 test/
 docs/
 demo/
-Dockerfile
-*.yaml
+*~

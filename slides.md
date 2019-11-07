@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-## First 100 Days Report
-### October 2019
+## Axesor becoming a SRE organization
+### November 2019
 <!-- .slide: data-background="/images/kaizen1.png" -->
 
 ---

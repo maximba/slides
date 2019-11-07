@@ -1,0 +1,16 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["prettier", "import"],
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 120 }],
+    "import/no-unresolved": 2
+  }
+}
