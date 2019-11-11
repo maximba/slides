@@ -32,6 +32,83 @@ _Source: Alex Meng ( <i class="fab fa-medium-m">@alexbmeng</i> )_
 ---
 
 ## Principles: CI/CD
+* All code changes are made via pull requests, verified, and approved.
+* Deploys are easy, fast, safe, and frequent.
+
+
+_Source: Alex Meng ( <i class="fab fa-medium-m">@alexbmeng</i> )_
+
+---
+
+## Principles: Software Engineering
+* SRE’s operate as software engineers, not system administrators.
+
+---
+
+## Principles: Microservices
+* Services are small, well defined, and isolated.
+
+---
+
+## Principles: Monitoring
+* All systems are monitored for critical metrics.
+* Health metrics too.
+
+---
+
+## Principles: Alerting
+
+* When self-healing fails, engineers are intelligently notified.
+
+---
+
+## Principles: Incident Response
+* On-call engineers (both SRE’s and SE’s) feel empowered to respond in a timely manner.
+
+---
+
+## Principles: Postmortems
+* All user-facing incidents require a postmortem.
+
+---
+
+## Principles: Security
+* Security is automated and baked into everything.
+
+---
+
+## Finance
+
+* SRE’s are financially conscious in all aspects of their work.
+
+---
+
+## Cloud Architecture
+
+* An externally managed cloud is the default place to run services. Running services by any other means requires justification.
+
+---
+
+## Supporting Services
+* The default option for supporting services (logging, monitoring, alerting, etc) is externally managed and hosted. Running these services internally requires justification.
+
+---
+
+## People
+* SRE’s and SE’s are on the same team. They are all engineers.
+
+---
+
+## <i class="fas fa-tasks">&nbsp; Git Ops Principles:</i>
+* &#x2705; The entire system is described declaratively
+* &#x2705; The canonical desired system state is versioned in Git
+* &#x2705; Approved changes to the desired state are automatically applied to the system.
+* &#x2705; Software agents ensure correctness and alert on divergence
+
+Source: _The Practial Guide To GitOps_ (Weaveworks)
+
+---
+## Principles: CI/CD
 <img class="plain" src="/images/cicd.png"></img>
 <img class="plain" src="/images/cicd1.png"></img>
 
@@ -49,15 +126,22 @@ _Source: Alex Meng ( <i class="fab fa-medium-m">@alexbmeng</i> )_
 
 ---
 
-## Principles: CI/CD &#x2192; Build Deployer
+## Principles: CI/CD &#x2192; Release
 <img class="plain" src="/images/cicd.png"></img>
 <img class="plain" src="/images/cicd4.png"></img>
 
 ---
 
+## Principles: CI/CD &#x2192; Build Deployer
+<img class="plain" src="/images/cicd.png"></img>
+<img class="plain" src="/images/cicd4b.png"></img>
+
+---
+
+
 ## Principles: CI/CD &#x2192; Deploy
 <img class="plain" src="/images/cicd.png"></img>
-<img class="plain" src="/images/cicd5.png"></img>
+<img class="plain" width="750" src="/images/cicd5.png"></img>
 
 ---
 
