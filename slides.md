@@ -1,7 +1,6 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 # <i class="fas fa-cubes"></i>  The Show: 
-## "_Axesor becoming a SRE organization_"
+## "_Axesor becoming an SRE organization_"
 
 <!-- .slide: data-background="/images/tvshow.png" -->
 <i class="fab fa-github"> maximba</i>
@@ -14,43 +13,53 @@
 ---
 
 ## Principles
-### "_Ash nazg durbatulûk_ ...
+### "_Ash nazg durbatulûk,..."_
+dsaf
+<i class="fas fa-cogs"> Automation</i>
 
 >_“Whenever there is a hard job to be done I assign it to a lazy man; he is sure to find an easy way of doing it.”_ (Walter Chrysler)
 
-<i class="fas fa-cogs"> Automation</i>
-
 Notes:
-* Automation: if an existing process cannot automated, it will be replaced. If a prosposed process cannot be automated it will be rejected.
+* Automation: if an existing process cannot automated, it will be replaced. If a proposed process cannot be automated it will be rejected.
 
 ---
 
 ## Principles
-### _... ash nazg gimbatul"_
+### _... _ash nazg gimbatul, ..._
+
+* Embracing Risk and Software Level Objetives
+* Eliminating Toil
+* Incident Response: on-call engineers fell empowered to respond in a timely manner
+* Postmortems: all user-facing incidents require one.
+* Software Engineering: SRE's and SE's are on the same team.
+* Simplicity 
+* Conscious Finance
+
+---
+ 
+## Principles
+### _... _ash Nazg thrakatulûk."_
 
 * CI/CD
 * Cloud Native: Ephemerality, Observability and Idempotency
 * Cloud Architecture: An externally **managed** cloud is the default place to run microservices
 * Monitoring: all systems are monitoried for critical metrics
-* Alerting: When self-helaing fails, engineers are intelligentely notified
-* Software Engineering: SRE's and SE's are on the same team.
-* Incident Response: on-call engineers fell empowered to respond in a timely manner
-* Postmortems: all user-facing incidents require one.
+* Alerting: when self-helaing fails, engineers are intelligentely notified
 * Security: automated and baked into everything
 
-Source: _Alex Meng ( <i class="fab fa-medium-m">@alexbmeng</i> ); Ravi Lachhman ( <i class="fab fa-medium-m">@ravilach</i>); Tomasz Cholewa (<i class="fab fa-github">cloudowski</i> )_. 
+
+Source: _Alex Meng ( <i class="fab fa-medium-m">@alexbmeng</i> ); Ravi Lachhman ( <i class="fab fa-medium-m">@ravilach</i>); Tomasz Cholewa (<i class="fab fa-github">cloudowski</i>); Site Reliability Engineering (https://landing.google.com/sre/book)_
 
 Notes:
 * CI: All code changes are made via pull/merge requests, verified and approved. 
 * CD: Deploys are easy, fast, safe and frequent
-* Cloud Native: Ephemerality, Observability and Idempotency
-* Cloud Architecture: An externally managed cloud is the default place to run microservices
-* Monitoring: all systems are monitoried for critical metrics
-* Alerting: When self-helaing fails, engineers are intelligentrly notified
-* Software Engineering: SRE's and SE's are on the same team.
-* Incident Response: on-call engineers fell empowered to respond in a timely manner
-* Postmortems: all user-facing incidents require one.
-* Security: automated and baked into everything
+
+---
+
+<!-- .slide: data-background="/images/gladiator.jpg" -->
+
+> _"It's easy to believe in something when you win all the time...The losses are what define a man's
+> faith.”_ (Brandon Sanderson, The Well of Ascension)
 
 ---
 
@@ -93,6 +102,8 @@ Source: _https://cloud.google.com/kubernetes-engine/kubernetes-comic_
 ## Gitlab CI/CD Pipeline
 ### First Approach:
 
+>_It is important to appreciate beauty, even when it is evil._ (The Fifth Season, N.K. Jemisin)
+
 ---
 
 ### Landscape
@@ -132,6 +143,8 @@ Source: _https://cloud.google.com/kubernetes-engine/kubernetes-comic_
 
 ## Gitlab CI/CD Pipeline
 ### GitOps Approach:
+
+> _It’s all right to need help. All of us have things we can’t do alone._ (The Fifth Season, N.K. Jemisin)
 
 ---
 
