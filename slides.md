@@ -130,12 +130,56 @@ Source: _https://cloud.google.com/kubernetes-engine/kubernetes-comic_
 <img class="plain" src="/images/cicd.png"></img>
 <img class="plain" width="750" src="/images/cicd5.png"></img>
 
+
 ---
+
+
+## Gitlab CI/CD Pipeline
+### GitOps Approach:
+
+---
+
+### Landscape
+<img class="plain" src="/images/cicd10.png"></img>
+<img class="plain" src="/images/cicd11.png"></img>
+
+---
+
+### Stage I &#x2192; Package
+<img class="plain" src="/images/cicd10.png"></img>
+<img class="plain" src="/images/cicd12.png"></img>
+
+---
+
+### Stage II &#x2192; Test
+
+<img class="plain" src="/images/cicd10.png"></img>
+<img class="plain" src="/images/cicd13.png"></img>
+
+---
+
+### Stage III &#x2192; Push
+<img class="plain" src="/images/cicd10.png"></img>
+<img class="plain" src="/images/cicd14.png"></img>
+
+---
+
+### <i class="fas fa-paper-plane"></i> Where is the Deployer ?
+<img class="plain" src="/images/cicd15.png"></img>
+
+---
+
+### <i class="fas fa-magic"></i> Who did the magic ? 
+<img class="plain" src="/images/cicd16.png"></img>
+
+---
+
+
 
 ## Thank you!
 ### Feedback? Questions?
 
-<i class="fas fa-question"></i> 
+<i class="fas fa-question-circle"></i> 
 
 _"I particularly found valuable..."_
 
