@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 # <i class="fas fa-cubes"></i>  The Show: 
 ## "_Axesor becoming an SRE organization_"
@@ -12,10 +13,9 @@
 
 ---
 
-## Principles
-### "_Ash nazg durbatulûk,..."_
-dsaf
-<i class="fas fa-cogs"> Automation</i>
+### Principles: "_Ash nazg durbatulûk, ..."_
+
+<i class="fas fa-cogs"></i> Automation
 
 >_“Whenever there is a hard job to be done I assign it to a lazy man; he is sure to find an easy way of doing it.”_ (Walter Chrysler)
 
@@ -24,7 +24,6 @@ Notes:
 
 ---
 
-## Principles
 ### _... _ash nazg gimbatul, ..._
 
 * Embracing Risk and Software Level Objetives
@@ -37,7 +36,6 @@ Notes:
 
 ---
  
-## Principles
 ### _... _ash Nazg thrakatulûk."_
 
 * CI/CD
@@ -58,6 +56,7 @@ Notes:
 
 <!-- .slide: data-background="/images/gladiator.jpg" -->
 
+<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;
 > _"It's easy to believe in something when you win all the time...The losses are what define a man's
 > faith.”_ (Brandon Sanderson, The Well of Ascension)
 
