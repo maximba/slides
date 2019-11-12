@@ -124,15 +124,11 @@ Source: _https://cloud.google.com/kubernetes-engine/kubernetes-comic_
 <img class="plain" src="/images/cicd4b.png"></img>
 
 ---
-
 ### Stage IV &#x2192; Deploy
-
 <img class="plain" src="/images/cicd.png"></img>
-<img class="plain" width="750" src="/images/cicd5.png"></img>
-
+<img class="plain" src="/images/cicd5.png" width="80%" ></img>
 
 ---
-
 
 ## Gitlab CI/CD Pipeline
 ### GitOps Approach:
