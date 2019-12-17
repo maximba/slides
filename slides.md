@@ -66,7 +66,7 @@ Notes:
 ## GitOps: CI/CD for K8S
 <!-- .slide: data-background="/images/tvshow.png" -->
 
-Source: _The Practial Guide To GitOps_ (Weaveworks)
+Source: _The Practical Guide To GitOps_ (Weaveworks)
 
 ---
 
