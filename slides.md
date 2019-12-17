@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
----
-
 # <i class="fas fa-cubes"></i>  The Show: 
 ## "_The Transformation Office_"
 
@@ -30,18 +28,18 @@ demanding stakeholders needs and expectations.
 
 * Digital
 * Operational
-* IT & Technology
+* IT and Technology
 * Support functions
 
 ---
 
-###  <i class="fas fa-pen"></i> _The need for a Transformation Office_
+###  The need for a Transformation Office
 
 * Transformation initiatives bring an additional layer of complexity that other projects do not
-* Often have a deep disruptive impact on the organisation’s prevailing structural and cultural dynamic
+* Often have a deep disruptive impact on the organisation
 * Transformation efforts can fail if they are not properly and exclusively managed as a unique set of initiatives
 
---- 
+---
 
 ### Transformation Office Processes
 
@@ -60,15 +58,6 @@ demanding stakeholders needs and expectations.
  * Capabilities building
  * Stakeholder engagement
  * Change management
-
---- 
-
-### Role of Chief Transformation Officer
-
-* Transformation Architect
-* Digital Savvy Expert
-* Stakeholders manager
-* Positive Disrupter 
 
 ---
 
@@ -91,6 +80,15 @@ demanding stakeholders needs and expectations.
 
 ---
 
+### Role of Chief Transformation Officer
+
+* Transformation Architect
+* Digital Savvy Expert
+* Stakeholders manager
+* Positive Disrupter 
+
+---
+
 ## Thank you!
 ### Feedback? Questions?
 
@@ -101,3 +99,5 @@ _"I particularly found valuable..."_
 _"I'd like to hear more about..."_
 
 _"I suggest to also consider..."_
+
+
