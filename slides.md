@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 # <i class="fas fa-cubes"></i>  The Show: 
-## "_The Transformation Office_"
+## "_Transformation and Innovation Office_"
 
 <!-- .slide: data-background="/images/tvshow.png" -->
 <i class="fab fa-gitlab"> mmartin@axesor.com</i>
@@ -13,6 +13,8 @@
 Transformation encompasses the adaptation of an organisation’s value proposition and business & operational model 
 to the fundamental changes brought by global trends both economical and societal, digital technologies and increasingly 
 demanding stakeholders needs and expectations.
+
+Innovations: a new idea or method, or the use of new ideas and methods.
 
 ---
 
@@ -80,12 +82,19 @@ demanding stakeholders needs and expectations.
 
 ---
 
-### Role of Chief Transformation Officer
+### The Teams
 
-* Transformation Architect
-* Digital Savvy Expert
-* Stakeholders manager
-* Positive Disrupter 
+* Data Architecture: ownership & cloud native
+* Data Engineering: data ingestion and consolidation
+* Plug & Play: End to end data flow with minimal client intervention. 
+
+---
+
+## Members
+
+![image](/images/teams.png)
+
+<!-- .slide: data-background="/images/tvshow.png" -->
 
 ---
 
