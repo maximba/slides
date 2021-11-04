@@ -12,3 +12,5 @@ test/
 docs/
 demo/
 *~
+Dockerfile
+docker-compose.yml
