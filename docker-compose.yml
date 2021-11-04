@@ -2,12 +2,9 @@ version: '3'
 services:
   reveal-md:
     build: .
-    image: axesor/slides:latest
+    image: maxmartin/slides:cicd
     volumes:
-      - ./slides.md:/app/slides.md
-      - ./custom.css:/app/custom.css
-      - ./images:/app/images
-      - ./theme/black.css:/app/theme/black.css
+      - ${PWD}/slides.md:/app/slides.md
     ports:
       - "1948:1948"
     
