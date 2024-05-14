@@ -113,18 +113,9 @@ docker-compose.yaml - client
 ---
 
 ## Thank you!
-### Feedback? Questions?
-
-<i class="fas fa-question-circle"></i> 
-
-_"I particularly found valuable..."_
-
-_"I'd like to hear more about..."_
-
-_"I suggest to also consider..."_
 
 ### Don't forget to visit !
 - Code repo at https://github.com/maximba/challenge
-- This presentation at 
+- This presentation at https://github.com/maximba/slides 
 
 maxi@bxsoft.com
