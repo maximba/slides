@@ -1,188 +1,116 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 # <i class="fas fa-cubes"></i>  The Show: 
-## "_Axesor becoming an SRE organization_"
+### The Locked Tomb: 
+#### _Containers, servers and certificates_
 
 <!-- .slide: data-background="/images/tvshow.png" -->
 <i class="fab fa-github"> maximba</i>
 
 ---
 
-## TL;DR
-<img class="plain" src="/images/TL;DR.png">SRE is what happens when you ask a software engineer to design an operations function.</img>
+## Introduction
+<!-- .slide: data-background="/images/gideon.jpg" data-background-size="40%" data-background-opacity="0.3" -->
+In the star system Dominicus, there are nine planets, each home to a great House which practices its own school of necromancy. 
 
 ---
 
-### Principles: "_Ash nazg durbatulûk, ..."_
-
-<i class="fas fa-cogs"></i> Automation
-
->_“Whenever there is a hard job to be done I assign it to a lazy man; he is sure to find an easy way of doing it.”_ (Walter Chrysler)
-
-Notes:
-* Automation: if an existing process cannot automated, it will be replaced. If a proposed process cannot be automated it will be rejected.
+<!-- .slide: data-background="/images/harrow.jpg" data-background-size="40%" data-background-opacity="0.3" -->
+The Houses in turn are ruled by the Emperor, an impossibly powerful, immortal necromancer whom they have worshipped as a god for the past ten thousand years.
 
 ---
 
-### _... _ash nazg gimbatul, ..._
+<!-- .slide: data-background="/images/alecto.jpg" data-background-size="30%" data-background-opacity="0.3" -->
+### TL;DR
 
-* Embracing Risk and Software Level Objetives
-* Eliminating Toil
-* Incident Response: on-call engineers fell empowered to respond in a timely manner
-* Postmortems: all user-facing incidents require one.
-* Software Engineering: SRE's and SE's are on the same team.
-* Simplicity 
-* Conscious Finance
+<i class="fas fa-cogs"></i> Be a Lyctor !
 
----
- 
-### _... _ash Nazg thrakatulûk."_
-
-* CI/CD
-* Cloud Native: Ephemerality, Observability and Idempotency
-* Cloud Architecture: An externally **managed** cloud is the default place to run microservices
-* Monitoring: all systems are monitoried for critical metrics
-* Alerting: when self-helaing fails, engineers are intelligentely notified
-* Security: automated and baked into everything
-
-
-Source: _Alex Meng ( <i class="fab fa-medium-m">@alexbmeng</i> ); Ravi Lachhman ( <i class="fab fa-medium-m">@ravilach</i>); Tomasz Cholewa (<i class="fab fa-github">cloudowski</i>); Site Reliability Engineering (https://landing.google.com/sre/book)_
-
-Notes:
-* CI: All code changes are made via pull/merge requests, verified and approved. 
-* CD: Deploys are easy, fast, safe and frequent
+Lyctors are immortal necromancers, revered as saints, who serve as the Emperor's right-hand necromancers in wars against his enemies. 
 
 ---
 
-<!-- .slide: data-background="/images/gladiator.jpg" -->
+<!-- .slide: data-background="/images/beast.jpg" data-background-size="40%" data-background-opacity="0.3" -->
+#### Functional requirements
+- Build two services: Harrow, the client, and Gideon, the server
+- Gideon responses have to include the Dominicus domain and the house ip. Like an echo service.
+- Harrow has to call to the server on its 9 house names using DNS resolution
+---
 
-<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;
-> _"It's easy to believe in something when you win all the time...The losses are what define a man's
-> faith.”_ (Brandon Sanderson, The Well of Ascension)
+#### Non-functional requirements
+
+<!-- .slide: data-background="/images/beast.jpg" data-background-size="40%" data-background-opacity="0.3" -->
+- Generate a docker-compose with the two different services
+- HTTPS will be used trusting the certificate (not skipping validation).
+- Do not use any reverse proxy.
+- Secrets cannot be committed to the repo
 
 ---
 
-# <i class="fas fa-cube"></i> Episode 0:
-## GitOps: CI/CD for K8S
-<!-- .slide: data-background="/images/tvshow.png" -->
+<!-- .slide: data-background="/images/harrow.jpg" data-background-size="40%" data-background-opacity="0.3" -->
+"One flesh, one end." 
+---
 
-Source: _The Practical Guide To GitOps_ (Weaveworks)
+#### Folder Elements
+```
+.
+└── challenge
+    ├── harrow
+    │   ├── harrow.py
+    │   ├── Dockerfile
+    │   ├── Makefile
+    │   └── requirements.txt
+    ├── compose.yaml
+    ├── LICENSE.txt
+    ├── Makefile
+    ├── minica
+    │   ├── go.mod
+    │   └── main.go
+    ├── README.md
+    └── gideon
+        ├── Dockerfile
+        ├── Makefile
+        ├── requirements.txt
+        └── gideon.py
+``` 
+---
+
+Makefile
+
+<img class="plain" src="/images/makefile.png" width="50%"></img>
 
 ---
 
-### The GitOps Principles:
-<i class="fas fa-angle-right"></i> The entire system is described declaratively
-<img class="plain" src="/images/decl.png">
+gideon.py
+
+<img class="plain" src="/images/pygideon.png" width="80%"></img>
 
 ---
 
-### The GitOps Principles:
-<i class="fas fa-angle-right"></i> The canonical desired system state is versioned in Git
-<img class="plain" src="/images/git.png">
+harrow.py
+
+<img class="plain" src="/images/pyharrow.png" width="50%"></img>
 
 ---
 
-### The GitOps Principles:
-<i class="fas fa-angle-right"></i> Approved changes to the desired state are automatically applied to the system.
-<img class="plain" src="/images/auto_apply.png">
+docker-compose.yaml - server
 
-Source: _Luc Juggery ( <i class="fab fa-medium-m"> @lucjuggery</i> )_
+<img class="plain" src="/images/server.png" width="50%"></img>
 
 ---
 
-### The GitOps Principles:
-<i class="fas fa-angle-right"></i>  Kubernetes is Self-Healing ensure correctness and alert on divergence.
-<img class="plain" src="/images/monitoring.png">
+docker-compose.yaml - client
 
-Source: _https://cloud.google.com/kubernetes-engine/kubernetes-comic_
+<img class="plain" src="/images/client.png" width="30%"></img>
 
 ---
 
-## Gitlab CI/CD Pipeline
-### First Approach:
+## Special thanks to:
 
->_It is important to appreciate beauty, even when it is evil._ (The Fifth Season, N.K. Jemisin)
-
----
-
-### Landscape
-<img class="plain" src="/images/cicd.png"></img>
-<img class="plain" src="/images/cicd1.png"></img>
+- _Minica_, the Certificates Generator at https://github.com/jsha/minica
+- _The Locked Tomb Wiki_ at https://thelockedtomb.fandom.com/wiki/The_Locked_Tomb_Wiki
+- _Tamsyn Muir_, the author of the Locked Tomb books
 
 ---
-
-### Stage I &#x2192; Build
-<img class="plain" src="/images/cicd.png"></img>
-<img class="plain" src="/images/cicd2.png"></img>
-
----
-
-### Stage II &#x2192; Test
-
-<img class="plain" src="/images/cicd.png"></img>
-<img class="plain" src="/images/cicd3.png"></img>
-
----
-
-### Stage III &#x2192; Release
-<img class="plain" src="/images/cicd.png"></img>
-<img class="plain" src="/images/cicd4.png"></img>
-
----
-### Stage III &#x2192; Build Deployer
-<img class="plain" src="/images/cicd.png"></img>
-<img class="plain" src="/images/cicd4b.png"></img>
-
----
-### Stage IV &#x2192; Deploy
-<img class="plain" src="/images/cicd.png"></img>
-<img class="plain" src="/images/cicd5.png" width="80%" ></img>
-
----
-
-## Gitlab CI/CD Pipeline
-### GitOps Approach:
-
-> _It’s all right to need help. All of us have things we can’t do alone._ (The Fifth Season, N.K. Jemisin)
-
----
-
-### Landscape
-<img class="plain" src="/images/cicd10.png"></img>
-<img class="plain" src="/images/cicd11.png"></img>
-
----
-
-### Stage I &#x2192; Package
-<img class="plain" src="/images/cicd10.png"></img>
-<img class="plain" src="/images/cicd12.png"></img>
-
----
-
-### Stage II &#x2192; Test
-
-<img class="plain" src="/images/cicd10.png"></img>
-<img class="plain" src="/images/cicd13.png"></img>
-
----
-
-### Stage III &#x2192; Push
-<img class="plain" src="/images/cicd10.png"></img>
-<img class="plain" src="/images/cicd14.png"></img>
-
----
-
-### <i class="fas fa-paper-plane"></i> Where is the Deployer ?
-<img class="plain" src="/images/cicd15.png"></img>
-
----
-
-### <i class="fas fa-magic"></i> Who did the magic ? 
-<img class="plain" src="/images/cicd16.png"></img>
-
----
-
-
 
 ## Thank you!
 ### Feedback? Questions?
@@ -194,3 +122,9 @@ _"I particularly found valuable..."_
 _"I'd like to hear more about..."_
 
 _"I suggest to also consider..."_
+
+### Don't forget to visit !
+- Code repo at https://github.com/maximba/challenge
+- This presentation at 
+
+maxi@bxsoft.com
