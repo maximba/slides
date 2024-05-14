@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -11,27 +11,48 @@
     <meta property="og:image" content="{{{absoluteUrl}}}/featured-slide.jpg" />
     <meta property="og:url" content="{{{absoluteUrl}}}" />
     {{/absoluteUrl}}
-    <link rel="stylesheet" href="{{{base}}}/css/reveal.css" />
-    <link rel="stylesheet" href="{{{base}}}/{{{themeUrl}}}" id="theme" />
+    <link rel="shortcut icon" href="{{{base}}}/favicon.ico" />
+    <link rel="stylesheet" href="{{{base}}}/dist/reset.css" />
+    <link rel="stylesheet" href="{{{base}}}/dist/reveal.css" />
+    <link rel="stylesheet" href="{{{themeUrl}}}" id="theme" />
     <link rel="stylesheet" href="{{{base}}}{{{highlightThemeUrl}}}" />
-    <link rel="stylesheet" href="{{{base}}}/css/print/{{#print}}pdf{{/print}}{{^print}}paper{{/print}}.css" type="text/css" media="print" />
-    {{#cssPaths}}
-    <link rel="stylesheet" href="{{{base}}}/{{{.}}}" />
-    {{/cssPaths}}
 
-    {{#watch}}
+    {{#cssPaths}}
+    <link rel="stylesheet" href="{{{.}}}" />
+    {{/cssPaths}} {{#watch}}
+
     <script>
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+      document.write(
+        '<script src="http://' +
+          (location.host || 'localhost').split(':')[0] +
+          ':35729/livereload.js?snipver=1"></' +
+          'script>'
+      );
     </script>
     {{/watch}}
   </head>
   <body>
     <div class="reveal">
-      <div class="slides">{{{slides}}}</div>
+      <div class="slides">
+        <section data-markdown {{{slidifyAttributes}}}>
+          <textarea data-template>
+            {{{markdown}}}
+          </textarea>
+        </section>
+      </div>
     </div>
 
-    <script src="{{{base}}}/js/reveal.js"></script>
+    <script src="{{{base}}}/dist/reveal.js"></script>
 
+    {{#mermaidOptionsStr}}
+    <script src="{{{base}}}/mermaid/dist/mermaid.min.js"></script>
+    {{/mermaidOptionsStr}}
+
+    <script src="{{{base}}}/plugin/markdown/markdown.js"></script>
+    <script src="{{{base}}}/plugin/highlight/highlight.js"></script>
+    <script src="{{{base}}}/plugin/zoom/zoom.js"></script>
+    <script src="{{{base}}}/plugin/notes/notes.js"></script>
+    <script src="{{{base}}}/plugin/math/math.js"></script>
     <script>
       function extend() {
         var target = {};
@@ -46,16 +67,6 @@
         return target;
       }
 
-      // Optional libraries used to extend on reveal.js
-      var deps = [
-        { src: '{{{base}}}/plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
-        { src: '{{{base}}}/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
-        { src: '{{{base}}}/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-        { src: '{{{base}}}/plugin/zoom-js/zoom.js', async: true },
-        { src: '{{{base}}}/plugin/notes/notes.js', async: true },
-        { src: '{{{base}}}/plugin/math/math.js', async: true }
-      ];
-
       // default options to init reveal.js
       var defaultOptions = {
         controls: true,
@@ -63,21 +74,47 @@
         history: true,
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
-        dependencies: deps
+        slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
       };
 
       // options from URL query string
-      var queryOptions = Reveal.getQueryHash() || {};
+      var queryOptions = Reveal().getQueryHash() || {};
 
       var options = extend(defaultOptions, {{{revealOptionsStr}}}, queryOptions);
     </script>
 
     {{#scriptPaths}}
-    <script src="{{{base}}}/{{{.}}}"></script>
+    <script src="{{{.}}}"></script>
     {{/scriptPaths}}
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
     </script>
+
+    {{#mermaidOptionsStr}}
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {{{mermaidOptionsStr}}});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
+    </script>
+    {{/mermaidOptionsStr}}
   </body>
 </html>

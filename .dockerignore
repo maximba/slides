@@ -7,7 +7,6 @@ npm-debug.log
 .prettierrc
 .github
 .release-it.json
-*.md
 test/
 docs/
 demo/

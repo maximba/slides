@@ -1,7 +1,7 @@
 {
   "assetsDir": "_assets",
   "css": [],
-  "highlightTheme": "zenburn",
+  "highlightTheme": "base16/zenburn",
   "host": "localhost",
   "listingTemplate": "template/listing.html",
   "port": 1948,
@@ -13,5 +13,7 @@
   "template": "template/reveal.html",
   "theme": "black",
   "title": "reveal-md",
-  "verticalSeparator": "\r?\n----\r?\n"
+  "verticalSeparator": "\r?\n----\r?\n",
+  "glob": "**/*.md",
+  "mermaid": {}
 }

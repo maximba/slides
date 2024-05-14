@@ -1,14 +1,19 @@
 #!/usr/bin/env node
 
-const argsParser = require('yargs-parser');
-const updater = require('update-notifier');
-const path = require('path');
-const fs = require('fs-extra');
-const open = require('open');
-const pkg = require('../package.json');
-const startServer = require('../lib/server');
-const writeStatic = require('../lib/static');
-const exportPDF = require('../lib/print');
+import argsParser from 'yargs-parser';
+import updater from 'update-notifier';
+import path from 'node:path';
+import url from 'node:url';
+import { readFile } from 'node:fs/promises';
+import open from 'open';
+import startServer from '../lib/server.js';
+import writeStatic from '../lib/static.js';
+import exportPDF from '../lib/print.js';
+import { loadJSON } from '../lib/util.js';
+
+const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+
+const pkg = loadJSON(path.join(__dirname, '../package.json'));
 
 const alias = {
   h: 'help',
@@ -22,7 +27,7 @@ const argv = argsParser(process.argv.slice(2), { alias });
 
 const { version, static: isStatic, featuredSlide, print, printSize, disableAutoOpen } = argv;
 
-const [isStartServer] = argv._;
+const hasPath = Boolean(argv._[0]);
 
 updater({ pkg }).notify();
 
@@ -30,23 +35,33 @@ updater({ pkg }).notify();
   /* eslint-disable no-console */
   if (version) {
     console.log(pkg.version);
-  } else if (isStartServer || isStatic) {
+  } else if (hasPath || isStatic) {
+    let server, initialUrl;
     try {
-      const [server, initialUrl] = isStartServer || (isStatic && featuredSlide) ? await startServer() : [];
       if (isStatic) {
+        [server] = featuredSlide ? await startServer() : [];
         await writeStatic();
-        server.close();
+        server && server.close();
       } else if (print) {
+        [server, initialUrl] = await startServer();
         await exportPDF(initialUrl, print, printSize);
         server.close();
-      } else if (!disableAutoOpen) {
-        open(initialUrl);
+      } else {
+        [server, initialUrl] = await startServer();
+        console.log(`The slides are at ${initialUrl}`);
+        !disableAutoOpen && open(initialUrl, { url: true });
+        process.on('SIGINT', () => {
+          console.log('Received SIGINT, closing gracefully.');
+          server.close();
+          process.exit(128);
+        });
       }
     } catch (err) {
       console.error(err);
+      process.exit(1);
     }
   } else {
-    const help = await fs.readFile(path.join(__dirname, './help.txt'));
+    const help = await readFile(path.join(__dirname, './help.txt'));
     console.log(help.toString());
   }
 })();

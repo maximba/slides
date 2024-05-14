@@ -1,0 +1,11 @@
+services:
+  reveal-md:
+    build: .
+    image: maximba/slides:main
+    volumes:
+      - ./slides.md:/app/slides.md
+      - ./custom.css:/app/custom.css
+      - ./all.css:/app/all.css
+      - ./images:/app/images
+    ports:
+      - "1948:1948"

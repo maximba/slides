@@ -1,11 +1,21 @@
 FROM node:lts-alpine
+
 WORKDIR /app
+COPY package.json package-lock.json ./
 
-COPY . /app
+# First install dependencies
+RUN npm install --omit=dev
 
-RUN npm install -g reveal-md
+# Install app
+
+WORKDIR /app/bin
+COPY bin ./
+
+WORKDIR /app/lib
+COPY lib ./
 
 EXPOSE 1948
 
+WORKDIR /app
 ENTRYPOINT [ "node", "bin/reveal-md.js" ]
-CMD [ "slides.md", "--css", "custom.css"]
+CMD [ "slides.md", "--css", "custom.css", "--css", "all.css"]
