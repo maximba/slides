@@ -39,7 +39,7 @@ Lyctors are immortal necromancers, revered as saints, who serve as the Emperor's
 #### Non-functional requirements
 
 <!-- .slide: data-background="/images/beast.jpg" data-background-size="40%" data-background-opacity="0.3" -->
-- Generate a docker-compose with the two different services
+- Use containers for services
 - HTTPS will be used trusting the certificate (not skipping validation).
 - Do not use any reverse proxy.
 - Secrets cannot be committed to the repo
@@ -47,7 +47,14 @@ Lyctors are immortal necromancers, revered as saints, who serve as the Emperor's
 ---
 
 <!-- .slide: data-background="/images/harrow.jpg" data-background-size="40%" data-background-opacity="0.3" -->
-"One flesh, one end." 
+"One flesh, ... 
+
+---
+
+First Approach:
+
+<img class="plain" src="/images/lb.png" width="50%"></img>
+
 ---
 
 #### Folder Elements
@@ -101,6 +108,16 @@ docker-compose.yaml - server
 docker-compose.yaml - client
 
 <img class="plain" src="/images/client.png" width="30%"></img>
+
+---
+
+<!-- .slide: data-background="/images/gideon.jpg" data-background-size="40%" data-background-opacity="0.3" -->
+... one end"
+---
+
+Second Approach:
+
+<img class="plain" src="/images/k8s.png" width="40%"></img>
 
 ---
 
