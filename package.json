@@ -35,7 +35,7 @@
     "debug": "4.3.4",
     "express": "4.21.2",
     "fs-extra": "11.2.0",
-    "glob": "10.3.12",
+    "glob": "10.5.0",
     "highlight.js": "11.9.0",
     "json5": "2.2.3",
     "livereload": "0.9.3",
